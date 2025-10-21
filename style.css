@@ -1,0 +1,147 @@
+body{
+  font-family:'Volkhov';
+  overflow-x:hidden;
+}
+.jadoo-hero-decore{
+  position:absolute;
+  right:0;
+  top:0;
+  bottom:0;
+  max-width: 800px;
+  z-index:-1;
+  display:block;
+}
+.jadoo-hero-decore img{
+  
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: right center;
+}
+.dark-mode .jadoo-hero-decore{
+  opacity:0.1;
+}
+.social-icon-jadoo{
+  width:100;
+  height:40px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  transition:transform 0.3s ease,box-shadow 0.3s ease;
+}
+.social-icon-jadoo:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 15px rgba(0,0,0,0.2);
+}
+.logo{
+  
+  font-size:30px;
+  font-weight:800;
+}
+.send-circle{
+  width:70px;
+  height:70px;
+  background-color:#5E3BE1;
+  transition:background-color 0.3s;
+}
+.send-circle:hover{
+  background-color:#747DEF;
+}
+.btn-subscribe{
+  background:linear-gradient(90deg,#FF7D68,#FF946D);
+  color:white;
+  font-weight:600;
+  transition:background 0.3s,transform 0.2s;
+}
+.btn-subscribe:hover{
+  background:linear-gradient(90deg,#FF946D,#FF7D68);
+  transform:scale(1.05);
+}
+.card{
+  transition:transform 0.3s ease,box-shadow 0.3s ease;
+}
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.2) !important;
+  transition:transform 0.3s ease,box-shadow 0.3s ease;
+  cursor:pointer;
+}
+.client img{
+  transition:transform 0.3s ease,box-shadow 0.3s ease;
+}
+.client img:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.2);
+  cursor:pointer;
+}
+.w-40{
+  width:40% !important;
+}
+.signup-card{
+  background-image:url('/assets/bg.png');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  border-radius:1rem;
+  width:100%;
+  max-width:800px;
+}
+.btn-primary{
+  background:linear-gradient(90deg,#FF7D68,#FF946D);
+  border:none;
+}
+.btn-primary:hover{
+  background:linear-gradient(90deg,#FF946D,#FF7D68);
+}
+.footer-logo img{
+  max-width:120px;
+  height:40px;
+  object-fit:contain;
+}
+.footer-icon:hover{
+  background:linear-gradient(90deg,#ae387d,#FF946D);
+}
+.dark-mode{
+  background-color:#121212 !important;
+  color:#e0e0e0 !important;
+  transition:background-color 0.5s,color 0.5s;
+  background-image:none !important;
+}
+.dark-mode .bg-white,
+.dark-mode .card,
+.dark-mode .bg-light,
+.dark-mode .input-group-text.bg-white{
+  background-color:#1e1e1e !important;
+  border-color:#333333 !important;
+  color:#e0e0e0 !important;
+  box-shadow:0 4px 10px rgba(255,255,255,0.05) !important;
+}
+.dark-mode .text-dark,
+.dark-mode h1,.dark-mode h2,.dark-mode h5,.dark-mode h6,
+.dark-mode .jadoo-logo,
+.dark-mode .text-primary{
+  color:#ffffff !important;
+}
+.dark-mode .text-secondary,
+.dark-mode .text-muted{
+  color:#aaaaaa !important;
+}
+.dark-mode .navbar-light .navbar-nav .nav-link.text-dark{
+  color:#ffffff !important;
+}
+.dark-mode .input-group input[type="email"]{
+  background-color:#1e1e1e !important;
+  color:#e0e0e0 !important;
+  border:1px solid #333333 !important;
+}
+.dark-mode footer{
+  background-color:#1e1e1e !important;
+}
+.dark-mode .social-icon-jadoo.bg-white{
+  background-color:#333333 !important;
+}
+.dark-mode .social-icon-jadoo i.text-dark{
+  color:#ffffff !important;
+}
+.dark-mode #darkModeToggle{
+  color:#ffffff !important;
+  border-color:#444444 !important;
+}

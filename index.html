@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-lang-key="page-title">Travel Agency </title>
+  <link id="bootstrap-css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+  <link id="bootstrap-rtl-css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css"
+    rel="stylesheet" disabled>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg position-relative w-100 py-3">
+    <div class="container-lg d-flex">
+      <a class="navbar" href="#home">
+        <img src="assets/logo.png" alt="Jadoo Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav ms-auto d-flex align-items-end gap-3">
+          <li class="nav-item"><a class="nav-link text-dark" href="#destination"
+              data-lang-key="nav-destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#Hotels" data-lang-key="nav-hotels">Hotels</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#Flights" data-lang-key="nav-flights">Flights</a>
+          </li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#Bookings" data-lang-key="nav-bookings">Bookings</a>
+          </li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#Login" data-lang-key="nav-login">Login</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#signup" data-lang-key="nav-signup">Sign up</a></li>
+          <li class="nav-item">
+            <button id="darkModeToggle" class="btn btn-outline-secondary d-flex align-items-center gap-1">
+              <i id="darkModeIcon" class="bi bi-moon-fill"></i>
+            </button>
+          </li>
+
+          <li class="nav-item dropdown   ">
+            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" id="currentLangDisplay">
+              EN
+            </a>
+            <ul class="dropdown-menu text-center">
+              <li><a class="dropdown-item lang-switch" href="#" data-lang="en" id="lang-en">EN</a></li>
+              <li><a class="dropdown-item lang-switch" href="#" data-lang="ar" id="lang-ar">عربي</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="container-lg d-flex align-items-center min-vh-100" id="home">
+    <div class="row align-items-center w-100">
+      <div class="col-12 col-lg-6 order-2 order-lg-1">
+        <h6 class="fw-semibold text-danger" data-lang-key="header-subtitle">BEST DESTINATIONS AROUND THE WORLD</h6>
+        <h1 class="fw-bolder display-2" data-lang-key="header-title">
+          Travel, enjoy and live a new and full life
+        </h1>
+        <p class="fs-5 text-secondary" data-lang-key="header-description">It's an invitation to break free from the
+          ordinary, immerse yourself in diverse cultures, and embrace the beauty of the world around you. </p>
+        <div class="d-flex flex-sm-row gap-3">
+          <a href="#client" class="btn btn-warning px- py-3 text-white" data-lang-key="header-find-more">Find out
+            more</a>
+          <a href="#" class="d-inline-flex align-items-center gap-2 text-dark text-decoration-none"
+            aria-label="Play demo">
+            <span class="d-flex justify-content-center align-items-center rounded-circle bg-danger text-white p-2">
+              <i class="bi bi-play-fill fs-4"></i>
+            </span>
+
+            <span data-lang-key="header-play-demo">Play Demo</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6 order-1 order-lg-2 ">
+        <img src="assets/header.png" class="img-fluid" alt="travel destination">
+      </div>
+
+    </div>
+    <div class="jadoo-hero-decore col-12 col-lg-6 order-1 order-lg-2 ">
+      <img src="assets/Decore.svg" alt="Decorative Background" class="img-fluid">
+    </div>
+  </header>
+
+  <section class="container-lg py-5" id="Flights">
+    <div class="text-center mb-5">
+      <h6 class="text-secondary mb-3" data-lang-key="services-category">CATEGORY</h6>
+      <h1 class="fw-bold" data-lang-key="services-title">We Offer Best Services</h1>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+        <div class="card text-center p-4 w-100 ">
+          <img src="assets/weather.png" class="mx-auto mb-3 img-fluid" alt="Weather">
+          <h5 class="fw-bold" data-lang-key="service-weather-title">Calculated Weather</h5>
+          <p class="text-secondary" data-lang-key="service-weather-description">Built Wicket longer admire do barton
+            vanity itself do in it.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+        <div class="card text-center p-4 w-100 ">
+          <img src="assets/77.png" class="mx-auto mb-3 img-fluid" alt="Flights">
+          <h5 class="fw-bold " data-lang-key="service-flights-title">Best Flights</h5>
+          <p class="text-secondary" data-lang-key="service-flights-description">Engrossed listening. Park gate sell they
+            west hard for the.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+        <div class="card text-center p-4 w-100 ">
+          <img src="assets/event.png" class="mx-auto mb-3 img-fluid" alt="Events">
+          <h5 class="fw-bold " data-lang-key="service-events-title">Local Events</h5>
+          <p class="text-secondary" data-lang-key="service-events-description">Barton vanity itself do in it. Preferd to
+            men it engrossed listening.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+        <div class="card text-center p-4 w-100 ">
+          <img src="assets/customisation.png" class="mx-auto mb-3 img-fluid" alt="Customization">
+          <h5 class="fw-bold" data-lang-key="service-customization-title">Customizations</h5>
+          <p class="text-secondary" data-lang-key="service-customization-description">We deliver outsourced aviation
+            services for military customers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container-lg py-5" id="destination">
+    <div class="text-center mb-5">
+      <div class="text-secondary mb-3" data-lang-key="top-selling-subtitle">TOP SELLING</div>
+      <h2 class="fw-bold" data-lang-key="top-selling-title">Top Destinations</h2>
+    </div>
+
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="card h-100 rounded-4 w-100">
+          <div class="ratio ratio-1x1">
+            <img src="assets/destination-1.png" class="card-img-top" alt="Rome">
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <h5 class="fw-bold text-dark mb-0" data-lang-key="rome-title">Rome, Italy</h5>
+              <span class="text-secondary fw-semibold">$5.42k</span>
+            </div>
+            <div class="d-flex align-items-center text-secondary">
+              <i class="bi bi-send-fill me-2 text-dark"></i>
+              <span data-lang-key="rome-days">10 Days Trip</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="card h-100 rounded-4 w-100">
+          <div class="ratio ratio-1x1">
+            <img src="assets/destination-2.jpg" class="card-img-top" alt="London">
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <h5 class="fw-bold text-dark mb-0" data-lang-key="london-title">London, UK</h5>
+              <span class="text-secondary fw-semibold">$4.2k</span>
+            </div>
+            <div class="d-flex align-items-center text-secondary">
+              <i class="bi bi-send-fill me-2 text-dark"></i>
+              <span data-lang-key="london-days">12 Days Trip</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="card h-100 rounded-4 w-100">
+          <div class="ratio ratio-1x1">
+            <img src="assets/destination-3.png" class="card-img-top" alt="Europe">
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <h5 class="fw-bold text-dark mb-0" data-lang-key="europe-title">Full Europe</h5>
+              <span class="text-secondary fw-semibold">$15k</span>
+            </div>
+            <div class="d-flex align-items-center text-secondary">
+              <i class="bi bi-send-fill me-2 text-dark"></i>
+              <span data-lang-key="europe-days">28 Days Trip</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container-lg py-5" id="Bookings">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-6 order-lg-2 d-flex justify-content-center position-relative mb-5 mb-lg-0">
+        <div class="card p-3 shadow-sm rounded-4" style="max-width: 370px;">
+          <img src="assets/greece-trip.jpg" class="card-img-top rounded-4 object-fit-cover" alt="Trip To Greece"
+            style="height:280px;">
+          <div class="card-body p-0 pt-3">
+            <h5 class="fw-bold mb-1 text-dark" data-lang-key="ongoing-trip-to-greece">Trip To Greece</h5>
+            <p class="text-muted small mb-3" data-lang-key="ongoing-trip-date">14-29 June | by Robbin jo</p>
+            <div class="d-flex gap-3 mb-3 text-secondary">
+              <i class="bi bi-compass-fill fs-5"></i>
+              <i class="bi bi-map-fill fs-5"></i>
+              <i class="bi bi-send-fill fs-5"></i>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center text-muted small">
+                <i class="bi bi-building-fill me-2 fs-5"></i>
+                <span data-lang-key="ongoing-trip-people">24 people going</span>
+              </div>
+              <i class="bi bi-heart fs-4 text-muted"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-absolute top-50 start-50 p-3 shadow-sm">
+          <div class="d-flex align-items-start mb-2">
+            <img src="assets/destination.png" alt="Ongoing Trip to Rome" class="rounded-circle me-3 flex-shrink-0"
+              width="50" height="50">
+            <div>
+              <p class="text-muted small mb-1" data-lang-key="ongoing-trip">Ongoing</p>
+              <h5 class="fw-bold mb-0 text-dark" data-lang-key="ongoing-trip-title">Trip to Rome</h5>
+            </div>
+          </div>
+
+          <div class="mt-2">
+            <p class="fw-semibold text-primary mb-1" data-lang-key="ongoing-trip-progress">40% completed</p>
+            <div class="progress">
+              <div class="progress-bar bg-primary w-40" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="col-12 col-lg-6 order-lg-1">
+        <div class="mb-3 text-secondary" data-lang-key="booking-subtitle">EASY & FAST</div>
+        <h1 class="fw-bold display-4 mb-4 " style=" color:#1E1D4C;" data-lang-key="booking-title">Book Your Next Trip In
+          3 Easy Steps</h1>
+        <ul class="list-unstyled">
+          <li class="d-flex mb-4 gap-3">
+            <div class="text-white d-flex justify-content-center align-items-center rounded bg-warning"
+              style="width:60px;height:60px;">
+              <img src="assets/selection 1.png" alt="Choose Destination Icon" class="p-2">
+            </div>
+            <div>
+              <h5 class="fw-bold mb-1 text-dark" data-lang-key="booking-step1-title">Choose Destination</h5>
+              <p class="text-secondary" data-lang-key="booking-step1-description">Choose your dream destination from our
+                curated selection.</p>
+            </div>
+          </li>
+
+          <li class="d-flex mb-4 gap-3">
+            <div class="text-white d-flex justify-content-center align-items-center rounded bg-danger"
+              style="width:60px;height:60px;">
+              <img src="assets/water-sport 1.png" alt="water-sport Icon" class="p-2">
+            </div>
+            <div>
+              <h5 class="fw-bold mb-1 text-dark" data-lang-key="booking-step2-title">Make Payment</h5>
+              <p class="text-secondary" data-lang-key="booking-step2-description">Securely complete your booking with
+                our easy payment options.</p>
+            </div>
+          </li>
+
+          <li class="d-flex mb-4 gap-3">
+            <div class="text-white d-flex justify-content-center align-items-center rounded bg-info"
+              style="width:60px;height:60px;">
+              <img src="assets/taxi 1.png" alt="taxi Icon" class="p-2">
+            </div>
+            <div>
+              <h5 class="fw-bold mb-1 text-dark" data-lang-key="booking-step3-title">Reach Airport on Selected Date</h5>
+              <p class="text-secondary" data-lang-key="booking-step3-description">Arrive at the airport on your chosen
+                date and begin your adventure.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-lg py-5" id="client">
+    <div class="row align-items-center">
+      <div class="col-lg-5 mb-5 mb-lg-0">
+        <div class="text-secondary mb-3" data-lang-key="testimonials-subtitle">TESTIMONIALS</div>
+        <h1 class="fw-bold display-4 text-dark" data-lang-key="testimonials-title">
+          What People Say <br>About Us.
+        </h1>
+      </div>
+
+      <div class="col-lg-7 position-relative">
+        <div id="clientCarousel" class="carousel slide" data-bs-interval="false">
+          <div class="carousel-inner">
+
+            <!-- Item 1 -->
+            <div class="carousel-item active">
+              <div class="card border-0 shadow-sm p-4 rounded-4 mx-auto" style="max-width: 500px;">
+                <div class="d-flex align-items-start gap-3">
+                  <img src="assets/client-1.jpg" alt="Emily Watson" class="rounded-circle border border-white"
+                    width="70" height="70">
+                  <div>
+                    <p class="text-secondary fs-6 mb-2" data-lang-key="client-1">
+                      Booking my trips through this platform has been a game-changer! From the intuitive interface to
+                      the seamless booking process, I've never felt more excited to explore new destinations.
+                    </p>
+                    <h5 class="fw-bold mb-0 text-dark">Emily Watson</h5>
+                    <small class="text-secondary" data-lang-key="role-enthusiast">Travel Enthusiast</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="carousel-item">
+              <div class="card border-0 shadow-sm p-4 rounded-4 mx-auto" style="max-width: 500px;">
+                <div class="d-flex align-items-start gap-3">
+                  <img src="assets/client-2.jpg" alt="David Nguyen" class="rounded-circle border border-white"
+                    width="70" height="70">
+                  <div>
+                    <p class="text-secondary fs-6 mb-2" data-lang-key="client-2">
+                      As a busy professional, time is of the essence. This website made planning my vacation a breeze,
+                      allowing me to focus on what matters most: making memories with my family.
+                    </p>
+                    <h5 class="fw-bold mb-0 text-dark">David Nguyen</h5>
+                    <small class="text-secondary" data-lang-key="role-executive">Business Executive</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="carousel-item">
+              <div class="card border-0 shadow-sm p-4 rounded-4 mx-auto" style="max-width: 500px;">
+                <div class="d-flex align-items-start gap-3">
+                  <img src="assets/client-3.jpg" alt="Michael Johnson" class="rounded-circle border border-white"
+                    width="70" height="70">
+                  <div>
+                    <p class="text-secondary fs-6 mb-2" data-lang-key="client-3">
+                      I've been using this service for years, and it never disappoints. The convenience of booking my
+                      flights, accommodations, and activities all in one place saves me time and stress every trip.
+                    </p>
+                    <h5 class="fw-bold mb-0 text-dark">Michael Johnson</h5>
+                    <small class="text-secondary" data-lang-key="role-flyer">Frequent Flyer</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark"></span>
+            <span class="visually-hidden" data-lang-key="carousel-prev">Previous</span>
+          </button>
+          <button class="carousel-control-next " type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark"></span>
+            <span class="visually-hidden" data-lang-key="carousel-next">Next</span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="client container-lg py-5 d-flex justify-content-center">
+    <div class="client row justify-content-center align-items-center g-5 w-100">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+        <img src="assets/Axon.png" alt="Axon Airlines Logo" class="img-fluid">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+        <img src="assets/Jetstar.png" alt="Jetstar Logo" class="img-fluid">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+        <img src="assets/Expedia.png" alt="Expedia Logo" class="img-fluid">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+        <img src="assets/Qantas.png" alt="Qantas Logo" class="img-fluid">
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+        <img src="assets/Alitalia.png" alt="Alitalia Logo" class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container py-5 d-flex justify-content-center" id="signup">
+    <div class="card text-center text-white p-4 p-md-5 shadow signup-card">
+
+      <!-- أيقونة الإرسال -->
+      <div
+        class="position-absolute top-0 start-0 translate-middle rounded-circle d-flex justify-content-center align-items-center send-circle">
+        <i class="ri-send-plane-fill fs-4 text-white"></i>
+      </div>
+
+      <!-- العنوان -->
+      <h2 class="fw-bold mb-5 px-lg-5 subscribe-title text-dark" data-lang-key="subscribe-title">
+        Subscribe to get information, latest news and other interesting offers about Jadoo
+      </h2>
+
+      <!-- الحقل والزر -->
+      <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+        <div class="input-group flex-grow-1">
+          <span class="input-group-text bg-white border-0">
+            <i class="ri-mail-line text-muted"></i>
+          </span>
+          <input type="email" class="form-control border-0 py-3" placeholder="Your email"
+            data-lang-key="subscribe-email-placeholder">
+        </div>
+        <button class="btn btn-subscribe py-3 px-4" data-lang-key="subscribe-button">
+          Subscribe
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="bg-white pt-5 pb-4">
+    <div class="container-lg">
+      <div class="row g-5 text-center text-md-start">
+
+        <!-- Logo -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h2 class="fw-bold">Jadoo.</h2>
+          <p class="text-secondary mt-3 small" data-lang-key="footer-description">
+            Book your trip in minute, get full control for much longer.
+          </p>
+        </div>
+
+        <!-- Company -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+          <h5 class="fw-bold mb-3 text-dark" data-lang-key="footer-company">Company</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-secondary text-decoration-none d-inline-block mb-2"
+                data-lang-key="footer-about">About</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-inline-block mb-2"
+                data-lang-key="footer-careers">Careers</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-inline-block mb-2"
+                data-lang-key="footer-mobile">Mobile</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+          <h5 class="fw-bold mb-3 text-dark" data-lang-key="footer-contact">Contact</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-secondary text-decoration-none d-inline-block mb-2"
+                data-lang-key="footer-help">Help/FAQ</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-inline-block mb-2"
+                data-lang-key="footer-press">Press</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-inline-block mb-2"
+                data-lang-key="footer-affiliates">Affiliates</a></li>
+          </ul>
+        </div>
+
+        <!-- More -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+          <h5 class="fw-bold mb-3 text-dark" data-lang-key="footer-more">More</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-secondary text-decoration-none d-inline-block mb-2"
+                data-lang-key="footer-fees">Airlinefees</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-inline-block mb-2"
+                data-lang-key="footer-airline">Airline</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none d-inline-block mb-2"
+                data-lang-key="footer-tips">Low fare tips</a></li>
+          </ul>
+        </div>
+
+        <!-- Social & Apps -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class=" d-flex justify-content-center justify-content-md-start gap-3 mb-4">
+            <a href="#" class="footer-icon d-flex justify-content-center align-items-center rounded-circle text-decoration-none p-2">
+              <i class="ri-facebook-fill fs-5 text-dark"></i>
+            </a>
+            <a href="#" class="footer-icon d-flex justify-content-center align-items-center rounded-circle text-decoration-none p-2">
+              <i class="ri-instagram-line fs-5 text-dark"></i>
+            </a>
+            <a href="#" class=" footer-icon d-flex justify-content-center align-items-center rounded-circle text-decoration-none p-2">
+              <i class="ri-twitter-fill fs-5 text-dark"></i>
+            </a>
+          </div>
+
+          <h6 class="fw-semibold mb-3 text-dark" data-lang-key="footer-app-title">Discover our app</h6>
+          <div class="footer-logo d-flex justify-content-center justify-content-md-start gap-2">
+          <a href="#"><img src="assets/google-play.jpg" alt="Google Play" class="rounded-3" ></a>
+          <a href="#"><img src="assets/app-store.jpg" alt="App Store" class="rounded-3"></a>
+        </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="text-center text-secondary pt-5 mt-4 border-top small" data-lang-key="footer-copyright">
+      All rights reserved @jadoo.com
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
