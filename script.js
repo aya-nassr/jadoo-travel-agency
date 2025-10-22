@@ -5,6 +5,7 @@ const htmlTag = document.documentElement;
 const bootstrapCss = document.getElementById('bootstrap-css'); 
 const bootstrapRtlCss = document.getElementById('bootstrap-rtl-css'); 
 const currentLangDisplay = document.getElementById('currentLangDisplay'); 
+
  
 const translations = { 
   'en': { 
